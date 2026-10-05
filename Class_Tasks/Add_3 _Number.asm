@@ -1,0 +1,21 @@
+.model small
+.stack 100h
+.code
+main proc
+    mov ax,2
+    mov bx,1
+    mov cx,2
+    add ax,bx
+    add ax,cx
+    inc ax
+    inc ax
+    inc ax
+    inc ax  
+    dec ax 
+    dec ax
+    mov dx,ax  
+    add dx,30h
+    mov ah,02h
+    int 21h
+main endp
+end main
